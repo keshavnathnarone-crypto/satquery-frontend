@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-page="analysis">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Results — SatQuery AI</title><link rel="stylesheet" href="style.css"></head>
+<body class="app-page">
+<header class="appbar">
+  <a class="brand" href="index.html"><span class="brand-icon">🌿</span><div><b>SatQuery AI</b><small>Earth observation made simple</small></div></a>
+  <nav>
+    <a href="workspace.html" data-nav="workspace">Workspace</a>
+    <a href="analysis.html" data-nav="analysis">Results</a>
+    <a href="evidence.html" data-nav="evidence">Evidence</a>
+  </nav>
+  <div class="profile-dot">SQ</div>
+</header>
+<main class="app-shell">
+  <section class="friendly-head">
+    <span>RESULTS</span>
+    <h1>Here’s the simple answer ✨</h1>
+    <p>The important part comes first. Technical details stay optional.</p>
+  </section>
+
+  <section class="answer-banner">
+    <div class="answer-icon">🌳</div>
+    <div><b id="headline">Yes, there is a significant decrease in forest area in the selected region.</b><p id="finding">The result is shown in simple language so anyone can understand it quickly.</p></div>
+  </section>
+
+  <section class="result-cards" id="metrics"></section>
+
+  <section class="meaning-card">
+    <div>
+      <h3>What this means</h3>
+      <div id="summary"></div>
+    </div>
+    <div class="island-3d">
+      <div class="island-base"></div>
+      <div class="f-tree it1"></div><div class="f-tree it2"></div><div class="f-tree it3"></div><div class="f-tree it4"></div>
+    </div>
+  </section>
+
+  <section class="accordion-stack">
+    <button id="statsToggle">Detailed Statistics <span>⌄</span></button>
+    <div class="accordion-body" id="statsBody"><p>Demo metric cards above summarize the selected workflow.</p></div>
+    <button id="processToggle">AI Workflow <span>⌄</span></button>
+    <div class="accordion-body" id="processBody"><p>Inputs checked → question understood → workflow selected → evidence prepared.</p></div>
+    <button id="techToggle">Technical Information <span>⌄</span></button>
+    <div class="accordion-body" id="tech"><p><b id="techTask"></b> · <span id="techInputs"></span> · Query: <span id="techQuery"></span></p></div>
+  </section>
+</main>
+<footer>SatQuery AI · Results</footer>
+<script src="script.js"></script>
+</body>
+</html>

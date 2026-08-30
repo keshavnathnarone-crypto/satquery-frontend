@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-page="workspace">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Workspace — SatQuery AI</title><link rel="stylesheet" href="style.css"></head>
+<body class="app-page">
+<header class="appbar">
+  <a class="brand" href="index.html"><span class="brand-icon">🌿</span><div><b>SatQuery AI</b><small>Earth observation made simple</small></div></a>
+  <nav>
+    <a href="workspace.html" data-nav="workspace">Workspace</a>
+    <a href="analysis.html" data-nav="analysis">Results</a>
+    <a href="evidence.html" data-nav="evidence">Evidence</a>
+  </nav>
+  <div class="profile-dot">SQ</div>
+</header>
+<main class="app-shell">
+  <section class="friendly-head">
+    <span>WORKSPACE</span>
+    <h1>Let’s explore your area 🌿</h1>
+    <p>Upload your images and ask anything about the changes you see.</p>
+  </section>
+
+  <section class="analysis-choice">
+    <div class="choice-title">Choose analysis type</div>
+    <div class="choice-grid">
+      <button data-mode="single"><div class="mode-icon">🖼</div><b>One Image</b><span>Analyze a single satellite image</span></button>
+      <button class="active" data-mode="bitemporal"><div class="mode-icon">🗓</div><b>Compare Two Dates</b><span>See how an area has changed</span></button>
+      <button data-mode="optical_sar"><div class="mode-icon">◈</div><b>Optical + SAR</b><span>Get deeper insight from two data types</span></button>
+    </div>
+  </section>
+
+  <section class="workspace-card">
+    <div class="upload-panel">
+      <h3>Upload images</h3>
+      <p>Drag & drop your images here or click to browse.</p>
+      <div class="uploads-row">
+        <label class="upload-soft">
+          <input id="file1" type="file" accept=".png,.jpg,.jpeg,.tif,.tiff">
+          <img id="preview1" alt="">
+          <div><div class="upload-icon">🖼</div><b id="label1">Before image</b><small id="name1">Optional</small></div>
+        </label>
+        <div class="swap">↔</div>
+        <label class="upload-soft" id="upload2">
+          <input id="file2" type="file" accept=".png,.jpg,.jpeg,.tif,.tiff">
+          <img id="preview2" alt="">
+          <div><div class="upload-icon">🖼</div><b id="label2">After image</b><small id="name2">Optional</small></div>
+        </label>
+      </div>
+
+      <div class="question-area">
+        <h3>Ask your question</h3>
+        <textarea id="query">Has the forest area decreased in this region?</textarea>
+        <button class="analyze-btn" id="runAnalysis">✦ Analyze</button>
+      </div>
+
+      <div class="idea-row">
+        <span>Need ideas? Try one of these</span>
+        <div><button>Forest change</button><button>Water change</button><button>Urban growth</button><button>Flood detection</button></div>
+      </div>
+    </div>
+
+    <aside class="workspace-help">
+      <div class="mini-forest-card">
+        <div class="forest-graphic"><div class="f-tree t1"></div><div class="f-tree t2"></div><div class="f-tree t3"></div></div>
+        <h3>How to use this page</h3>
+        <ol>
+          <li>Choose the analysis type.</li>
+          <li>Upload the image or images.</li>
+          <li>Write a simple question.</li>
+          <li>Press Analyze.</li>
+        </ol>
+      </div>
+    </aside>
+  </section>
+</main>
+<footer>SatQuery AI · Workspace</footer>
+<script src="script.js"></script>
+</body>
+</html>

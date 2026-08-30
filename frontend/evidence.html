@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-page="evidence">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Evidence — SatQuery AI</title><link rel="stylesheet" href="style.css"></head>
+<body class="app-page">
+<header class="appbar">
+  <a class="brand" href="index.html"><span class="brand-icon">🌿</span><div><b>SatQuery AI</b><small>Earth observation made simple</small></div></a>
+  <nav>
+    <a href="workspace.html" data-nav="workspace">Workspace</a>
+    <a href="analysis.html" data-nav="analysis">Results</a>
+    <a href="evidence.html" data-nav="evidence">Evidence</a>
+  </nav>
+  <div class="profile-dot">SQ</div>
+</header>
+<main class="app-shell">
+  <section class="friendly-head">
+    <span>EVIDENCE</span>
+    <h1>Visual Evidence 🌿</h1>
+    <p>See the changes clearly.</p>
+  </section>
+
+  <section class="evidence-top-tabs">
+    <button class="active" data-view="before">Before</button>
+    <button data-view="after">After</button>
+    <button data-view="change">Change Map</button>
+  </section>
+
+  <section class="evidence-grid">
+    <div class="ev-card before-card"><img id="beforeImg" alt=""><div class="sat-placeholder before-ph"></div><span>Before</span></div>
+    <div class="ev-card after-card"><img id="afterImg" alt=""><div class="sat-placeholder after-ph"></div><span>After</span></div>
+    <div class="ev-card change-card"><div class="change-map"><div class="change-net"></div></div><span>Change Map</span></div>
+  </section>
+
+  <section class="detected">
+    <div class="detected-head"><div><h3>Detected Areas</h3><p>Click on an area to see details.</p></div><button id="showAll">Show All</button></div>
+    <div class="detected-grid">
+      <button class="region active" data-region="development"><span>Area 01</span><div class="region-thumb rt1"></div><b>High Change</b><em id="r1">−18.4%</em></button>
+      <button class="region" data-region="water"><span>Area 02</span><div class="region-thumb rt2"></div><b>Medium Change</b><em id="r2">−9.7%</em></button>
+      <button class="region" data-region="land"><span>Area 03</span><div class="region-thumb rt3"></div><b>Low Change</b><em id="r3">−2.3%</em></button>
+    </div>
+  </section>
+
+  <section class="evidence-summary">
+    <div><small>SELECTED AREA</small><h2 id="evidenceTitle">New development</h2></div>
+    <p id="evidenceDesc">The demo highlights the selected area and explains what changed.</p>
+    <strong id="evidenceDelta">+23.4 ha</strong>
+  </section>
+</main>
+<footer>SatQuery AI · Evidence</footer>
+<script src="script.js"></script>
+</body>
+</html>
